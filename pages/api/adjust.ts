@@ -1,8 +1,9 @@
 // pages/api/adjust.ts
-import type { NextApiRequest, NextApiResponse } from "next";
 import { withIronSessionApiRoute } from "iron-session/next";
-import { sessionOptions } from "@/lib/session";
-import { VENDOR_META } from "@/lib/vendorMap";
+import type { NextApiRequest, NextApiResponse } from "next";
+
+import { sessionOptions } from "../../lib/session";
+import { VENDOR_META } from "../../lib/vendorMap";
 
 const PASSKIT_BASE = process.env.PASSKIT_BASE!;
 const PASSKIT_TOKEN = process.env.PASSKIT_TOKEN!;
