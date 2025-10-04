@@ -1,7 +1,7 @@
 // pages/m/[memberId].tsx
 import { GetServerSideProps } from "next";
 import { withIronSessionSsr } from "iron-session/next";
-import { sessionOptions } from "@/lib/session";
+import { sessionOptions } from "../../lib/session";
 import { useEffect, useState } from "react";
 
 type Props = { memberId: string; vendorId: string };
