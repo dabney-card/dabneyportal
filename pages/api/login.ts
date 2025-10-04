@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { withIronSessionApiRoute } from "iron-session/next";
-import { sessionOptions } from "@/lib/session";
+import { sessionOptions } from "../../lib/session";
 
 const USERS = [
   { email: "clerk@harrys.com", password: "temp123", vendorId: "harry" },
